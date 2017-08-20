@@ -1,12 +1,13 @@
-.title{
+.title {
   font-family: 'Josefin Slab', serif;
   font-weight: bold;
   text-shadow: 2px 2px 4px #999;
   text-align: center;
   color: #333;
   font-size: 65px;
-
+  margin: 10px 0 50px 0;
 }
+
 body{
   overflow-x: hidden;
 
@@ -49,12 +50,12 @@ a:hover{
 
 .tagline{
 /*  font-family: 'Josefin Slab', serif; */
- 
   color: #333;
   font-size: 25px;
   margin-top: -40px;
-   color:#333;
+  color:#333;
   background-color: deepPink;
+  line-height: 150%;
 }
 .date{
  font-size: 20px;
@@ -115,13 +116,11 @@ button:active {
 
 .mainText{
   background-color:rgba(255, 255, 255, 0.9);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 2px;
+  padding: 5px;
   text-align: justify;
 }
 
-.paddedBox{
+.fBox{
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 2px;
@@ -150,33 +149,48 @@ button:active {
   margin-top: 60px !important;
 }
 
-.subtitle{
-  font-family: 'Josefin Slab', serif;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px #999;
-  text-align: center;
-  position: relative;
-  top: -60px;
-  right:-280px;
-  font-size: 30px;
-  color: deepPink;
+@media only screen and (max-width : 991px) {
+  .desktop { 
+    display: none; 
+  }
+  .floatingLogo { 
+    position: static;
+    margin: 0 auto 80px 0;
+    width: 100% !important;
+  }
+  .floatingLogoImg { 
+    position: static;
+    width: 100% !important;
+    height: auto;
+  }
 }
 
-
+.subtitle {
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px #999;
+  color: deepPink;
+  margin: 0;
+  padding: 0 15px 0 0;
+  position: absolute;
+  right: 0px;
+  top: -15px;
+}
 
 .rotate {
 
 /* Safari */
--webkit-transform: rotate(40deg);
+-webkit-transform: rotate(20deg);
 
 /* Firefox */
--moz-transform: rotate(40deg);
+-moz-transform: rotate(20deg);
 
 /* IE */
--ms-transform: rotate(40deg);
+-ms-transform: rotate(20deg);
 
 /* Opera */
--o-transform: rotate(40deg);
+-o-transform: rotate(20deg);
 
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-2);
