@@ -149,9 +149,21 @@ button:active {
   margin-top: 60px !important;
 }
 
-/*@media only screen and (max-width : 380px) {
-   .subtitle{ display: none; }
-}*/
+@media only screen and (max-width : 991px) {
+  .desktop { 
+    display: none; 
+  }
+  .floatingLogo { 
+    position: static;
+    margin: 0 auto 80px 0;
+    width: 100% !important;
+  }
+  .floatingLogoImg { 
+    position: static;
+    width: 100% !important;
+    height: auto;
+  }
+}
 
 .subtitle {
   font-family: 'Josefin Slab', serif;
