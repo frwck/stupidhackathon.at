@@ -18,6 +18,9 @@ var sourceSwap = function () {
 //create the hover change image behavior
 $('#logoImg').hover(sourceSwap, sourceSwap);
 
+function randomColor(){
+	return '#'+Math.floor(Math.random()*16777215).toString(16);
+}
 
 function showRandomImage(){
 		
@@ -57,6 +60,9 @@ function toggleLogo(){
 }
 
 function doScrollStuff(){
+
+	$( "#registerButton" ).css({"color":randomColor()})	
+
 	scrollCounter++;
 	scrollCounter = scrollCounter % 15;		
 

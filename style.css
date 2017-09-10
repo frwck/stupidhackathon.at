@@ -92,14 +92,14 @@ button {
   padding: 10px;
   padding-top: 0px;
   padding-bottom: 2px;
-  background-color: deepPink;
+  background-color: #9C5FFF;
   margin: 10px;
   color: white;
   text-shadow: none;
-  box-shadow: 1px 0px 1px #BE3077, 0px 1px 1px hotpink, 2px 1px 1px #BE3077, 1px 2px 1px hotpink, 3px 2px 1px #BE3077, 2px 3px 1px hotpink, 4px 3px 1px #BE3077, 3px 4px 1px hotpink, 5px 4px 1px #BE3077, 4px 5px 1px hotpink, 6px 5px 1px #BE3077;
+  box-shadow: 1px 0px 1px #9251FC, 0px 1px 1px #AF7FFF, 2px 1px 1px #792AF9, 1px 2px 1px #AF7FFF, 3px 2px 1px #792AF9, 2px 3px 1px #AF7FFF, 4px 3px 1px #792AF9, 3px 4px 1px #AF7FFF, 5px 4px 1px #792AF9, 4px 5px 1px #AF7FFF, 6px 5px 1px #792AF9;
   cursor: pointer;
   display: inline-block;
-  margin-top: 11px;
+  margin-top: 0px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   position: relative;
@@ -121,11 +121,11 @@ button {
 }
 
 button:hover {
-  background-color: #E21A62;
+  background-color: #AF7FFF;
 }
 
 button:active {
-  box-shadow: 1px 0px 1px #BE3077, 0px 1px 1px hotpink, 2px 1px 1px #BE3077, 1px 2px 1px hotpink, 3px 2px 1px #BE3077;
+  box-shadow: 1px 0px 1px #792AF9, 0px 1px 1px #AF7FFF, 2px 1px 1px #792AF9, 1px 2px 1px #AF7FFF, 3px 2px 1px #792AF9;
   top: 2px;
   left: 3px;
 }
