@@ -1,242 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Stupid Hackathon Tirol Edition</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-		
-		<link href="https://fonts.googleapis.com/css?family=Bangers|Berkshire+Swash|Bungee|Bungee+Shade|Carter+One|Fredoka+One|Knewave|Love+Ya+Like+A+Sister|Open+Sans|Quicksand|Signika|UnifrakturMaguntia" rel="stylesheet">
-		
-		<link href="style.css" rel="stylesheet" media="screen">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="js/bgDraw.js"></script>
-		<script src="js/scripts.js"></script>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-66254099-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</head>
-	<body>
-		<canvas id="canvas" style="position: fixed; z-index: -100; margin: 0;"></canvas>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-md-offset-1">
-					<div class="floatingLogo">
-						<img id="logoImg" class="floatingLogoImg" src="img/logo.png" data-alt-src="img/dontTouch.gif" />
-						<div align="center">
-							<a href="https://twitter.com/hackathonstupid" target="_blank"  style="top: 600px; position:fixed; background-color:transparent;"><button class="desktop">Now with Twitter<br> (and CSS animations)!</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-md-offset-1">
-					<!-- Title -->
-					<br>
-					<h1 class="title">Stupid Hackathon</h1>
-					<h2 class="subtitle rotate blink" style="text-align:center">Tirol Edition<br>V2</h2>
-					<br>
-					
 
-					<h2 class="tagline" align="center">
-						Stupid shit nobody needs &amp; terrible ideas...
-						<div class="hackathon">HACKATHON!</div>
-						
-						<div class="date">20th-21st Oct. 2017,<br> Spielraum FabLab, Innsbruck</div>
-					</h2>
-					<!-- What's this? -->
-					<div class="section sectionBg">
-						What's this?
-					</div>	  		
-					<div class="mainText">
-						<p>So you want to take part in a hackathon and create the next facebook, crypto currency, iPhone, instagram, or a really super cool and "awesome" calendar app? Then go look somewhere else!</p>
-						<p>This is a stupid hackathon. The <a href="http://www.stupidhackathon.com/">&nbsp;idea&nbsp;</a> is to remove purpose from invention to reduce creative pressure and ultimately reach nirvana of absolute uselessness. No goal, no ROI, no just stupid shit nobody needs. Contrary to popular believe, this is not an easy task.</p>
-						<p>From the 20th to the 21st of October 2017 teams will hack, hammer, knit and solder their way to uselessness in the <a href="http://fablab.spielraumfueralle.at/">&nbsp;Spielraum FabLab in Innsbruck&nbsp;</a> to create the most pointless and stupid whatever within 24h. As with all serious events, there will be an honorable panel of experts to select the 3 most ridiculous projects.</p>	
-						<p>Everybody is welcome.</p>
-						<p><b>Disclaimer</b><br>Unfortunately, we cannot prevent this event from creating some interesting and useful ideas. There may be even teams that find they love each other and end up producing something sensible in the long run. For this we take no responsibility.</p>
-					</div>
-					<div class="section" style="text-align:center; font-size:35px;">	
-					<a href="https://startalps.typeform.com/to/cWm6Lt" target="_blank" style="  background-color:transparent;"><button id="registerButton" class="desktop" >Register Here!</button></a></div>
-					<!-- Schedule -->
-					<div class="section sectionBg">
-						Preliminary Schedule
-					</div>
-					<div class="mainText">
-						<div class="row">
-							<div class="col-xs-6">
-								<b>Friday 20th of Oct.</b><br>
-								<i>5pm - 5:30pm: </i><br>Introduction by the organizers<br>
-								<i>5:30pm - 6pm: </i><br>Pitch your terrible idea(s)<br>
-								<i>6pm - 6:30pm: </i><br>Form teams<br>
-								<i>6:30pm - all night long:</i><br>Hack and build away (snacks &amp; drinks and places to nap provided)<br>
-							</div>
-							<div class="col-xs-6">
-								<b>Saturday 21st of Oct.</b><br>
-								<i>9am:</i><br>Breakfast Time!<br>
-								<i>9:30am  - 12pm: </i><br>More hackingyeah!<br>
-								<i>12pm - 5pm</i><br>Lunch, then even more hacking!<br>
-								<i>5pm - : </i><br>Present your terrible ideas in front of the jury and celebrate!
-							</div>
-						</div>
-					</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stupid Hackathon Tirol Edition</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
 
-					<div class="section sectionBg">
-						Inspiration from 2015
-					</div>
-					<div class="mainText"><p>
-						<b>The winner: StopCat!</b> <br>
-						 A handcrafted cat plugin to stop waving cats from waving. Making something useless even more useless. Huge market in Asia!
-						<img class="img-responsive" src="img/pics/stopcatTheWinner.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Berkshire+Swash|Bungee|Bungee+Shade|Carter+One|Fredoka+One|Knewave|Love+Ya+Like+A+Sister|Open+Sans|Quicksand|Signika|UnifrakturMaguntia"
+	 rel="stylesheet">
 
-					</p>
-						<p>
-						<b>Magnetic chopsticks</b> <br>
-						They are basically impossible use without makeing a huge mess. Also tremendous market opportunities in Asia!
-					   <img class="img-responsive" src="img/pics/chop.jpg"></p>
-					   
-					   <p>
-					   <b>Don't cut the semmel!</b> <br>
-					   A drum machine that makes beats by telling you not to cut things that you're' just cutting!
-					  <img class="img-responsive" src="img/pics/drum.jpg"></p>
-					<p>
-					<div style="text-align:center; margin-top:30px; font-size:30px" >
-					  <a href="http://www.stupidhackathon.com" target="_blank">MORE STUPID INSPIRATION!</a>
-					</div></p>
-					</div>
-					<!-- FAQ -->
-					<div class="section sectionBg">
-						FAQ
-					</div>
-					<div class="mainText">
-						<p>	
-							<b>Who can participate?</b><br>
-							Anyone. No skills needed! 
-						</p>
-						<p>	
-						<b>Where can I register?</b><br>
-							<a href="https://startalps.typeform.com/to/cWm6Lt" target="_blank">HERE!</a>
-						</p>
-						<p>	
-							<b>How does the application work?</b><br>
-							We are planning on 30 participants and the applications are treated as first-come-first-served. We are also keeping a waiting list for people to move up if someone cancels.
-						</p>
-						<p>	
-							<b>Can I participate if I'm not a coder/hacker/maker?</b><br>
-							Yes, of course!
-						</p>
-						<p>	
-							<b>Does this stupid shit cost money?</b><br>
-							Yes, 15 Eurobucks. We want to provide you with good quality food and drinks. We rely on sponsoring and your participation fee to make it happen. You'll get a paypal.me link to to pay after you registered.
-						</p>
-						<p>
-							<b>Any suggestions for projects?</b><br>
-							Here are some suggestions:<br> Producing energy through hate, Artificial Super Stupidity (A.S.S.), recursive virtual reality, internet of stupid things, industry -4.0, teledildonics, making something out of nothing, anything you fancy.
-						</p>
-						<p>
-							<b>Where?</b><br>
-							In the <a href="http://fablab.spielraumfueralle.at">&nbsp;Spielraum FabLab&nbsp;</a> at in Innsbruck, Austria. It's a truly creative environment with lots of diffent places to sit, solder, saw or screw. 
-						</p>
-						<p>
-							<b>Are the number of participants limited?</b><br>
-							Unfortunately, yes. We'll have space for 30 participants.
-						</p>
-						<p>
-							<b>Can we participate in already fixed teams?</b><br>
-							Yes, but it would be nice if you are open to let others who don't have a team take part in your team.
-							
-						</p>
-						<p>
-							<b>Can I participate without already having a terribly stupid idea?</b><br>
-							Yeah, sure. You could either come up with something idiotic at the hackathon, or join another team.
-							
-						</p>
-						<p>
-							<b>Can we already come with a terribly stupid idea?</b><br>
-							Sure, it would be great if you are open to let others take part in your team to make your idea reality.
-							
-						</p>
-						<p>
-							<b>What materials and machines will be there?</b><br>
-							We will provide all sorts of electronic equipment and also some soldering stations. Our friends of the <a href="http://fablab.spielraumfueralle.at">&nbsp;Spielraum FabLab&nbsp;</a> will help you to 3d print, laser cut and CNC mill your shit.
-						</p>
-						<p>
-							<b>I like this, how can I help?</b><br>
-							We are looking for sponsors to make it possible for us to provide high-quality food. If you or your company is willing to donate a bit of money, we will put you in the sponsors section of this website and will be grateful forever. Of course, any helping hand is always very welcome. Please <a href="mailto:matthias@webundspeck.com">&nbsp;contact&nbsp;</a> us!  
-						</p>
-						<p>
-							<b>How can I get in touch?</b><br>
-							Either via the <a href="https://twitter.com/hackathonstupid" target="_blank">bird</a> or throw us a <a href="mailto:matthias@webundspeck.com">mail</a> down the alley.
-						</p>
-					</div>
-					<!-- Sponsors -->
-					<div class="section sectionBg">
-						Sponsors &amp; Supporters
-					</div>	  		
-					<div class="mainText">
-						<div class="sponsorTable">
-							<a href="http://informatik.uibk.ac.at/" target="_blank">&nbsp;Institute of Computer Science&nbsp;</a>
-							<a href="http://www.uibk.ac.at/smt/innovation-entrepreneurship/" target="_blank">&nbsp;Department Innovation and Entrepreneurship&nbsp;</a>
-						</div>	
-						<div class="sponsorTable">
-							<a href="https://www.sengaro.com/" target="_blank" class="white"><img   width="120" src="img/logos/sengaro.png"></a>
-							<a href="http://www.txture.io/" target="_blank" class="white"><img   width="120" src="img/logos/txture.png"/></a>
-							<a href="http://ches.pro" target="_blank" class="white"><img width="120"src="img/logos/esd.png" /></a>
-						</div>
-						<div class="sponsorTable">
-							<a href="http://mohemian.com" target="_blank" class="white"><img width="120"   src="img/logos/mohemian.png" /></a>
-							<a href="http://www.webundspeck.com" target="_blank" class="white"><img height="50"src="img/logos/speck.png" /></a>
-						</div>
-					</div>
-					<!-- Team -->
-					<div class="section sectionBg">
-						Team
-					</div>	  	
-					<div class="paddedBox mainText">
-						<div class="row">
-							<div class="col-md-6">		
-								<a href="https://twitter.com/frwck" target="_blank">&nbsp;Matthias Farwick&nbsp;</a><br>
-								Simon Haller<br>
-								
-							</div>	
-							<div class="col-md-6">		
-								<a href="http://www.uibk.ac.at/smt/innovation-entrepreneurship/team/vita-kathrin-treutinger.html" target="_blank">&nbsp;Kathrin Treutinger</a>			
-							</div>
-						</div>
-					</div>
-					<!-- Thanks -->
-					<div class="section sectionBg">
-						Big Thanks
-					</div>	  		
-					<div class="paddedBox mainText">
-						<p>
-							Standing on the shoulders of giantly stupid hackathons:<br> 
-							<a href="http://www.stupidhackathon.com" target="_blank">&nbsp;http://www.stupidhackathon.com&nbsp;</a><br>
-							<a href="http://stupidhackathon.de/" target="_blank">&nbsp;http://stupidhackathon.de&nbsp;</a><br>
-							Logo Design:<br>
-							<a href="http://www.eekhoorn.at">&nbsp;Eekhoorn&nbsp;</a><br>
-							Making Support:<br>
-							<a href="https://www.facebook.com/pages/Spielraum-Fablab/417107995133637?fref=ts" target="_blank">&nbsp;Spielraum FabLab&nbsp;</a><br>
-							Random drawing script:<br>
-							<a href="http://vincemckelvie.tumblr.com/" target="_blank">&nbsp;Vince McKelvi&nbsp;</a><br>
-					
-							Location:<br>
-							<a href="http://spielraumfueralle.at/" target="_blank">Spielraum für Alle</a><br>
-							University:<br>
-							<a href="http://informatik.uibk.ac.at/" target="_blank">&nbsp;Institute of Computer Science&nbsp;</a><a href="http://www.uibk.ac.at/smt/innovation-entrepreneurship/" target="_blank">&nbsp;Department Innovation and Entrepreneurship&nbsp;</a><br>
-							Random GIFs:<br>
-							<a href="https://github.com/giphy/GiphyAPI" target="_blank">&nbsp;Giphy Api&nbsp;</a><br>
-							Web "Design":<br>
-							<a href="https://twitter.com/frwck" target="_blank">&nbsp;Matthias Farwick&nbsp;</a><br>
-							Daniel Egger
-						</p>
+	<link href="style.css" rel="stylesheet" media="screen">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+	<script src="js/bgDraw.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-66254099-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<canvas id="canvas" style="position: fixed; z-index: -100; margin: 0;"></canvas>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1">
+				<div class="floatingLogo">
+					<img id="logoImg" class="floatingLogoImg" src="img/logo.png" data-alt-src="img/dontTouch.gif" />
+					<div align="center">
+						<a href="https://twitter.com/hackathonstupid" target="_blank" style="top: 600px; position:fixed; background-color:transparent;"><button class="desktop">Now with Twitter<br> (and CSS animations)!</button></a>
 					</div>
 				</div>
 			</div>
+			<div class="col-md-6 col-md-offset-1">
+				<!-- Title -->
+				<br>
+				<h1 class="title">Stupid Hackathon</h1>
+				<h2 class="subtitle rotate blink" style="text-align:center">Tirol Edition<br>V2</h2>
+				<br>
+
+
+				<h2 class="tagline" align="center">
+					Stupid shit nobody needs &amp; terrible ideas...
+					<div class="hackathon">HACKATHON!</div>
+
+					<div class="date">20th-21st Oct. 2017,<br> Spielraum FabLab, Innsbruck</div>
+				</h2>
+				<!-- What's this? -->
+				<div class="section sectionBg">
+					What's this?
+				</div>
+				<div class="mainText">
+					<p>So you want to take part in a hackathon and create the next instagram, crypto currency, iPhone, or a really
+						super cool and "awesome" calendar app? Then go look somewhere else!</p>
+					<p>This is a stupid hackathon. The <a href="http://www.stupidhackathon.com/">&nbsp;idea&nbsp;</a> is to remove purpose
+						from invention to reduce creative pressure and ultimately reach nirvana of absolute uselessness. No goal, no ROI, use case just stupid shit nobody needs. Contrary to popular believe, this is not an easy task.</p>
+					<p>From the 20th to the 21st of October 2017 teams will hack, hammer, knit and solder their way to uselessness in the
+						<a
+						 href="http://fablab.spielraumfueralle.at/">&nbsp;Spielraum FabLab in Innsbruck&nbsp;</a> to create the most pointless and stupid whatever within 24h. As with
+							all serious events, there will be an honorable panel of experts to select the 3 most ridiculous projects.</p>
+					<p>Everybody is welcome.</p>
+					<p><b>Disclaimer</b><br>Unfortunately, we cannot prevent this event from creating some interesting and useful ideas. There
+						may be even teams that find they love each other and end up producing something sensible in the long run. For this
+						we take no responsibility.</p>
+				</div>
+				<div class="section" style="text-align:center; font-size:35px;">
+					<a href="https://startalps.typeform.com/to/cWm6Lt" target="_blank" style="  background-color:transparent;"><button id="registerButton" class="desktop" >Register Here!</button></a></div>
+				<!-- Schedule -->
+				<div class="section sectionBg">
+					Preliminary Schedule 2017
+				</div>
+				<div class="mainText">
+					<div class="row">
+						<div class="col-xs-6">
+							<b>Friday 20th of Oct. 2017</b><br>
+							<i>6pm - 6:30pm: </i><br>Introduction by the stupid organizers<br>
+							<i>6:30pm - 7:30pm: </i><br>Pitch your terrible idea(s) and form teams<br>
+							<i>7:30pm - all night long:</i><br>Hack and build away (snacks &amp; drinks and places to nap provided)<br>
+						</div>
+						<div class="col-xs-6">
+							<b>Saturday 21st of Oct. 2017</b><br>
+							<i>9am:</i><br>Breakfast Time!<br>
+							<i>9:30am  - 12pm: </i><br>More hackingyeah!<br>
+							<i>12pm - 5pm</i><br>Lunch, then even more hacking!<br>
+							<i>5pm - : </i><br>Present your terrible ideas in front of the jury and celebrate!
+						</div>
+					</div>
+				</div>
+
+				<div class="section sectionBg">
+					Inspiration from 2015
+				</div>
+				<div class="mainText">
+					<p>
+							<div class="inspiration_header">The winner of 2015: StopCat!</div> A handcrafted cat plugin that stops waving cats from waving. Making something useless
+						even more useless. Huge market in Asia!
+						<img class="img-responsive" src="img/pics/stopcatTheWinner.jpg">
+
+					</p>
+					<p>
+						<br>	<div class="inspiration_header" >Magnetic chopsticks</div>  They are basically impossible use without makeing a huge mess. Also tremendous market
+						opportunities in Asia!
+						<img class="img-responsive" src="img/pics/chop.jpg"></p>
+
+					<p>
+							<br><div class="inspiration_header" >Don't cut the semmel!</div> A drum machine that makes beats by telling you not to cut things that you're' just
+						cutting!
+						<img class="img-responsive" src="img/pics/drum.jpg"></p>
+				
+					<div class="section sectionBg">
+						!More inspiration from our stupid friends!
+					</div>
+					<p><br>
+						<div class="inspiration_header" >Small Talk</div>
+						Small Talk is a device that allows uers to quickly exit uncomfortable social situations. By <a href="http://studioamelia.com/" target="_blank">Winger-Bearskin</a> and <a href="http://lav.io/" target="_blank">Sam Lavigne</a>.						<br>
+						<div class="embed-responsive embed-responsive-4by3">
+							<iframe src="https://player.vimeo.com/video/207031946" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+							 allowfullscreen></iframe>
+						</div>
+					</p>
+
+					<p><br>
+						<div class="inspiration_header">Hypochondriapp</div>
+						<a href="http://hypochondriapp.io/" target="_blank">Hypochondriapp</a> diagnoses you with the worst possible disease for whatever symptoms you may be experiencing. <a href="http://xie-emily.com/" target="_blank">By Emily Xie</a>.<br>
+					<a href="http://hypochondriapp.io/" target="_blank">	<img class="img-responsive" src="http://www.stupidhackathon.com/2017/hypo.jpg"></a></p>
+					</p>
+
+					<p>
+						<div style="text-align:center; margin-top:30px; font-size:30px">
+							<a href="http://www.stupidhackathon.com" target="_blank">MORE STUPID INSPIRATION!</a>
+						</div>
+					</p>
+				</div>
+				<!-- FAQ -->
+				<div class="section sectionBg">
+					FAQ
+				</div>
+				<div class="mainText">
+					<p>
+						<b>Who can participate?</b><br> Anyone. No skills needed!
+					</p>
+					<p>
+						<b>Where can I register?</b><br>
+						<a href="https://startalps.typeform.com/to/cWm6Lt" target="_blank">HERE!</a>
+					</p>
+					<p>
+						<b>How does the application work?</b><br> We are planning on 30 participants and the applications are treated as first-come-first-served.
+						We are also keeping a waiting list for people to move up if someone cancels.
+					</p>
+					<p>
+						<b>Can I participate if I'm not a coder/hacker/maker?</b><br> Yes, of course!
+					</p>
+					<p>
+						<b>Does this stupid shit cost money?</b><br> Yes, 15 Eurobucks. We want to provide you with good quality food and drinks.
+						We rely on sponsoring and your participation fee to make it happen. You'll get a paypal.me link to to pay after you
+						registered.
+					</p>
+					<p>
+						<b>Any suggestions for projects?</b><br> Here are some suggestions:<br> Producing energy through hate, Artificial Super
+						Stupidity (A.S.S.), gamification of bullying populist parties, recursive virtual reality, internet of stupid things, industry -4.0, teledildonics, making something
+						out of nothing, anything you fancy.
+					</p>
+					<p>
+						<b>Where?</b><br> In the <a href="http://fablab.spielraumfueralle.at">&nbsp;Spielraum FabLab&nbsp;</a> at in Innsbruck,
+						Austria. It's a truly creative environment with lots of diffent places to sit, solder, saw or screw.
+					</p>
+					<p>
+						<b>Are the number of participants limited?</b><br> Unfortunately, yes. We'll have space for 30 participants.
+					</p>
+					<p>
+						<b>Can we participate in already fixed teams?</b><br> Yes, but it would be nice if you are open to let others who don't
+						have a team take part in your team.
+
+					</p>
+					<p>
+						<b>Can I participate without already having a terribly stupid idea?</b><br> Yeah, sure. You could either come up with
+						something idiotic at the hackathon, or join another team.
+
+					</p>
+					<p>
+						<b>Can we already come with a terribly stupid idea?</b><br> Sure, it would be great if you are open to let others take
+						part in your team to make your idea reality.
+
+					</p>
+					<p>
+						<b>What materials and machines will be there?</b><br> We will provide all sorts of electronic equipment and also some
+						soldering stations. Our friends of the <a href="http://fablab.spielraumfueralle.at">&nbsp;Spielraum FabLab&nbsp;</a>						will help you to 3d print, laser cut and CNC mill your shit.
+					</p>
+					<p>
+						<b>I like this, how can I help?</b><br> We are looking for sponsors to make it possible for us to provide high-quality
+						food. If you or your company is willing to donate a bit of money, we will put you in the sponsors section of this website
+						and will be grateful forever. Of course, any helping hand is always very welcome. Please <a href="mailto:matthias@webundspeck.com">&nbsp;contact&nbsp;</a>						us!
+					</p>
+					<p>
+						<b>How can I get in touch?</b><br> Either via the <a href="https://twitter.com/hackathonstupid" target="_blank">bird</a>						or throw us a <a href="mailto:matthias@webundspeck.com">mail</a> down the alley.
+					</p>
+				</div>
+				<!-- Sponsors -->
+				<div class="section sectionBg">
+					Sponsors &amp; Supporters
+				</div>
+				<div class="mainText">
+					<div class="sponsorTable">
+						<a href="http://informatik.uibk.ac.at/" target="_blank">&nbsp;Institute of Computer Science&nbsp;</a>
+						<a href="http://www.uibk.ac.at/smt/innovation-entrepreneurship/" target="_blank">&nbsp;Department Innovation and Entrepreneurship&nbsp;</a>
+					</div>
+					<div class="sponsorTable">
+						<a href="https://www.sengaro.com/" target="_blank" class="white"><img   width="120" src="img/logos/sengaro.png"></a>
+						<a href="http://www.txture.io/" target="_blank" class="white"><img   width="120" src="img/logos/txture.png"/></a>
+						<a href="http://ches.pro" target="_blank" class="white"><img width="120"src="img/logos/esd.png" /></a>
+					</div>
+					<div class="sponsorTable">
+						<a href="http://mohemian.com" target="_blank" class="white"><img width="120"   src="img/logos/mohemian.png" /></a>
+						<a href="http://www.webundspeck.com" target="_blank" class="white"><img height="50"src="img/logos/speck.png" /></a>
+					</div>
+				</div>
+				<!-- Team -->
+				<div class="section sectionBg">
+					Contact the organizers
+				</div>
+				<div class="paddedBox mainText">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="https://twitter.com/frwck" target="_blank">&nbsp;Matthias Farwick&nbsp;</a>
+						</div>
+						<div class="col-md-6">
+							<a href="http://www.uibk.ac.at/smt/innovation-entrepreneurship/team/vita-kathrin-treutinger.html" target="_blank">&nbsp;Kathrin Treutinger</a>
+						</div>
+					</div>
+				</div>
+				<!-- Thanks -->
+				<div class="section sectionBg">
+					Big Thanks
+				</div>
+				<div class="paddedBox mainText">
+					<p>
+						Standing on the shoulders of giantly stupid hackathons:<br>
+						<a href="http://www.stupidhackathon.com" target="_blank">&nbsp;http://www.stupidhackathon.com&nbsp;</a><br>
+						<a href="http://stupidhackathon.de/" target="_blank">&nbsp;http://stupidhackathon.de&nbsp;</a><br> Logo Design:<br>
+						<a href="http://www.eekhoorn.at">&nbsp;Eekhoorn&nbsp;</a><br> Making Support:<br>
+						<a href="https://www.facebook.com/pages/Spielraum-Fablab/417107995133637?fref=ts" target="_blank">&nbsp;Spielraum FabLab&nbsp;</a><br>						Random drawing script:<br>
+						<a href="http://vincemckelvie.tumblr.com/" target="_blank">&nbsp;Vince McKelvi&nbsp;</a><br> Location:
+
+						<br>
+						<a href="http://spielraumfueralle.at/" target="_blank">Spielraum für Alle</a><br> University:
+						<br>
+						<a href="http://informatik.uibk.ac.at/" target="_blank">&nbsp;Institute of Computer Science&nbsp;</a><br><a href="http://www.uibk.ac.at/smt/innovation-entrepreneurship/"
+						 target="_blank">&nbsp;Department Innovation and Entrepreneurship&nbsp;</a><br> Random GIFs:<br>
+						<a href="https://github.com/giphy/GiphyAPI" target="_blank">&nbsp;Giphy Api&nbsp;</a><br> Web "Design":<br>
+						<a href="https://twitter.com/frwck" target="_blank">&nbsp;Matthias Farwick&nbsp;</a><br> Daniel Egger
+					</p>
+				</div>
+			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>

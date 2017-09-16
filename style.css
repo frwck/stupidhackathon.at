@@ -168,6 +168,15 @@ button:active {
   margin-top: 60px !important;
 }
 
+.inspiration_header{
+  color: #792AF9;
+  font-size: 20px;
+  font-weight: bold; 
+  width: fit-content;
+  padding-right:5px;
+  
+}
+
 @media only screen and (max-width: 991px) {
   .desktop {
     display: none;
