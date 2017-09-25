@@ -24,7 +24,7 @@ function randomColor(){
 
 function showRandomImage(){
 		
-	var tags = ["hackathon","raspberry pi" ,"stupid", "hack", "3d", "arduino", "drone"]
+	var tags = ["idiot","sex","stupid","genius", "hacking","shit", "3d", "invention","innovation","nerd"]
 	var randTag = tags[Math.floor(Math.random() * tags.length)]
 	
 	$.getJSON( "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=" + randTag + "&fmt=json",
@@ -70,7 +70,7 @@ function doScrollStuff(){
 		drawBg()
 	}
 
-	if(scrollCounter == 14){
+	if(scrollCounter == 50){
 		toggleLogo()
 	}		
 }
